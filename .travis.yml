@@ -1,5 +1,6 @@
 language: objective-c
 osx_image: xcode8.3
-xcode_project: Travis-Test.xcodeproj
+podfile: Podfile
+xcode_workspace: Travis-Test.xcworkspace
 xcode_scheme: Travis-Test
-script: xcodebuild -project Travis-Test.xcodeproj -scheme Travis-Test -configuration Debug build
+script: xcodebuild -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator -configuration Debug build
