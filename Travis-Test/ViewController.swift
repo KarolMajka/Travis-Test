@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Bond
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        textField.reactive.text.bind(to: label.reactive.text)        
     }
 
     override func didReceiveMemoryWarning() {
