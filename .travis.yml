@@ -6,4 +6,4 @@ install:
 - pod update
 xcode_workspace: Travis-Test.xcworkspace
 xcode_scheme: Travis-Test
-script: xcodebuild -workspace Travis-Test.xcworkspace -scheme Travis-TestTests -sdk iphonesimulator -configuration Debug test
+script: xcodebuild clean && xcodebuild build -workspace Travis-Test.xcworkspace -scheme Travis-TestTests -sdk iphonesimulator CODE_SIGNING_REQUIRED=NO
