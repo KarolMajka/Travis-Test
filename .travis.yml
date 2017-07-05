@@ -6,4 +6,4 @@ install:
 - pod update
 xcode_workspace: Travis-Test.xcworkspace
 xcode_scheme: Travis-Test
-script: xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -destination 'platform=iOS Simulator,name-iPhone 6' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

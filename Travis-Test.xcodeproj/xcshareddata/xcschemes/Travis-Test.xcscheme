@@ -37,6 +37,10 @@
                BlueprintName = "Travis-TestTests"
                ReferencedContainer = "container:Travis-Test.xcodeproj">
             </BuildableReference>
+            <LocationScenarioReference
+               identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+               referenceType = "1">
+            </LocationScenarioReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
