@@ -1,10 +1,9 @@
 language: objective-c
 osx_image: xcode8.3
-before_install: ./install_dependencies.sh
 podfile: Podfile
 install:
-- pod install/Users/karolmajka/Documents/SourceTree/Projekty/Travis-Test/.travis.yml
+- pod install
 - pod update
 xcode_workspace: Travis-Test.xcworkspace
 xcode_scheme: Travis-Test
-script: xcodebuild clean && xcodebuild build -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild test -workspace Travis-Test.xcworkspace -scheme Travis-Test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
